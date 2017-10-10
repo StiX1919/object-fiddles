@@ -70,7 +70,7 @@ var backPack = {}
 var item = 'firstPocket'
 backPack[item]='chapstick'
 
-
+backPack.color = "black"
 
 alert(backPack)
 //After you do the above, alert your entire backPack object.
@@ -132,7 +132,7 @@ user2.email = 'tyler.mcginnis@devmounta.in'
 //Create an empty object called methodCollection.
 
   //Code Here
-
+var methodCollection= {}
 
 
 
@@ -141,7 +141,8 @@ Now add two methods (functions that are properties on objects) to your methodCol
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
  which logs 'hello' to the console. 
  */
-
+methodCollection.alertHello=()=>alert("hello")
+methodCollection.logHello=()=>console.log('hello')
   //Code Here
 
 
@@ -149,7 +150,8 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 
 //Now call your alertHello and logHello methods.
-
+methodCollection.alertHello()
+methodCollection.logHello()
   //Code Here
 
 
@@ -167,7 +169,12 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // parameters and returns a new object with all of the information that you passed in.
 
   //Code Here
-
+var makePerson =(name,birthday,ssn)=>{return {
+  name,
+  birthday,
+  ssn
+}
+}
 
 
 
@@ -182,5 +189,9 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
   //Code Here
-
-
+var makeCard = (cardNumber,expirationDate,securityCode)=> {return creditCard= {
+  cardNumber,
+  expirationDate,
+  securityCode
+}
+}
