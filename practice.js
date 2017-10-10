@@ -7,9 +7,10 @@
 //Create an object called me. Give it a key of name with the value being your name, and another key of age with the value being your age. Then alert your name using dot notation.
 
   //Code here
+var me = {name: "Spencer",
+age: 26}
 
-
-
+alert(me.name)
 
 
 
@@ -22,7 +23,12 @@
 
   //Code here
 
-
+var favoriteThings = {band: 'yellowcard',
+food: 'pasta',
+person: 'myself',
+book: 'redwall',
+movie: "Howl's moving castle",
+holiday: 'birthday'}
 
 
 
@@ -31,15 +37,16 @@
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Code here
-
-
+favoriteThings.car = 'ford'
+favoriteThings.brand = 'puma'
 
 
 
 //Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 
   //Code here
-
+favoriteThings.food = 'Chicken Nuggets'
+favoriteThings.book = 'Harry Potter'
 
 
 
@@ -59,12 +66,13 @@ that is named color, with the value being the color of your backpack.
 */
 
   //Code here
+var backPack = {}
+var item = 'firstPocket'
+backPack[item]='chapstick'
 
 
 
-
-
-
+alert(backPack)
 //After you do the above, alert your entire backPack object.
 
   //Code here
@@ -76,7 +84,7 @@ You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. 
 */
-
+console.log(backPack)
   //Code here
 
 
@@ -84,6 +92,7 @@ Instead, console.log your whole backPack object and then check out the console.
 
 
 //NEXT PROBLEM
+
 
 
 
@@ -100,7 +109,8 @@ var user2 = {
 // name -> 'Tyler S. McGinnis', email -> 'tyler.mcginnis@devmounta.in'. Make that change.
 
   //Code Here
-
+user2.name = 'Tyler S. McGinnis'
+user2.email = 'tyler.mcginnis@devmounta.in'
 
 
 
